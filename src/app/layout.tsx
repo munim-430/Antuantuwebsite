@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     "Performance Marketing",
   ],
   authors: [{ name: "Meherun Antara", url: "https://github.com/munim-430/Antuantuwebsite" }],
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "রূপকথা প্রোডাকশন হাউজ | Rupkotha Production House",
     description:

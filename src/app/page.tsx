@@ -73,7 +73,21 @@ export default function HomePage() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8 pt-6">
+        <div className="relative z-10 max-w-5xl mx-auto text-center space-y-6 pt-6">
+          {/* Brand Logo Emblem */}
+          <div className="flex justify-center">
+            <div className="relative p-3.5 rounded-2xl bg-gradient-to-br from-teal-navy/80 via-obsidian-200 to-obsidian border border-gold-champagne/40 shadow-[0_0_35px_rgba(212,175,55,0.25)] flex items-center justify-center group hover:border-gold-champagne transition-all duration-300">
+              <Image
+                src="/logo.png"
+                alt="Rupkotha Production House Emblem"
+                width={70}
+                height={70}
+                className="object-contain group-hover:scale-105 transition-transform duration-300"
+                priority
+              />
+            </div>
+          </div>
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-teal-navy/70 border border-gold-champagne/40 text-gold-light shadow-[0_0_20px_rgba(212,175,55,0.2)] animate-fadeIn">
             <span className="w-2 h-2 rounded-full bg-gold-champagne animate-ping" />

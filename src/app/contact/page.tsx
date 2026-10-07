@@ -1,6 +1,7 @@
 "use client";
 
 import React, { Suspense } from "react";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { InquiryForm } from "@/components/InquiryForm";
 import {
@@ -57,15 +58,26 @@ function ContactContent() {
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-white">
-                {language === "bn" ? "মেহেরুন অন্তরা" : "Meherun Antara"}
-              </h3>
-              <p className="text-xs text-gold-light font-medium mt-0.5">
-                {language === "bn"
-                  ? "প্রতিষ্ঠাতা ও ক্রিয়েটিভ ডিরেক্টর (৩ বছরের অভিজ্ঞতা)"
-                  : "Founder & Creative Director (3+ Years Leadership)"}
-              </p>
+            <div className="flex items-center gap-4">
+              <div className="relative w-16 h-16 rounded-2xl overflow-hidden border-2 border-gold-champagne shadow-md flex-shrink-0">
+                <Image
+                  src="/founder.jpg"
+                  alt="Meherun Antara"
+                  fill
+                  sizes="64px"
+                  className="object-cover object-top"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">
+                  {language === "bn" ? "মেহেরুন অন্তরা" : "Meherun Antara"}
+                </h3>
+                <p className="text-xs text-gold-light font-medium mt-0.5">
+                  {language === "bn"
+                    ? "প্রতিষ্ঠাতা ও ক্রিয়েটিভ ডিরেক্টর (৩ বছরের অভিজ্ঞতা)"
+                    : "Founder & Creative Director (3+ Years Leadership)"}
+                </p>
+              </div>
             </div>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">

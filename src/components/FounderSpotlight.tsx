@@ -32,7 +32,7 @@ export const FounderSpotlight: React.FC = () => {
                     alt="Meherun Antara - Founder Rupkotha Production House"
                     fill
                     sizes="(max-width: 768px) 100vw, 500px"
-                    className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
+                    className="object-cover object-top hover:scale-105 transition-all duration-700 ease-in-out"
                     priority
                   />
                   {/* Subtle gradient vignette overlay */}
